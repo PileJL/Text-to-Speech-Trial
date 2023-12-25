@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EndGame"
+    android:background="@drawable/questions_bg">
+
+    <ImageView
+        android:id="@+id/score_header"
+        android:layout_width="350dp"
+        android:layout_height="180dp"
+        android:src="@drawable/score_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/score_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="\n  2/5"
+        android:textSize="30sp"
+        android:fontFamily="@font/aileron_heavy"
+        android:textColor="@color/white"
+        android:background="@drawable/star"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/play_again"
+        app:layout_constraintTop_toBottomOf="@+id/score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="play again"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aileron_heavy"
+        android:background="@drawable/button_background"
+        android:onClick="backToGameMode"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_to_landing_page"
+        app:layout_constraintTop_toBottomOf="@id/play_again"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Back to Home Page"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aileron_heavy"
+        android:background="@drawable/button_background"
+        android:onClick="backToLandingPage"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

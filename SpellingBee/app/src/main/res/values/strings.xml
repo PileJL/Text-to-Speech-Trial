@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Spelling Bee</string>
+    <string name="meet_developers">Meet the Developers</string>
+    <string name="start_spelling">Start Spelling</string>
+    <string name="espina_name">Eileen Hariette H. Espina</string>
+    <string name="pile_name">John Lloyd C. Pile</string>
+    <string name="pinca_name">Racheal Anne E. Pinca</string>
+    <string name="espina_intro">Hi! I am Eileen Hariette H. Espina, 20 years old, and a STEM graduate from Mabini Colleges Inc. I am an ISFJ-A who loves BTS, Wattpad, webtoons, manhwa/manga, and anime. I am also quite invested in animation, academic papers, arts and design, video editing, and photo editing. In addition, I also want to explore the world of cybersecurity, games, web design, software, applications, and cryptocurrency. Hence, I am now a first-year BSIT student who aims to create a game like Genshin Impact.</string>
+    <string name="pinca_intro">Hi, my name is Racheal and my hobbies revolve around reading, watching, and studying. I love reading books, watching funny and educational videos entertain me, and I love learning. In the future, I aspire to become a successful programmer and a pilot. After taking BSIT, I will study a pilot course and be a licensed pilot someday. I want to pursue my dreams because I\'ve promised myself to try to make my future self happy.  This course will help me enhance my skill set, become knowledgeable about my chosen industry, enhance and unleash my creative side, and a good stepping stone as well. That is the reason i choose IT as my course.</string>
+    <string name="pile_intro">Hi! I am John Lloyd C. Pile. You can all call me "JL". Since I do things obsessively and as a result is; I lose interest in everything easily; my hobbies are just anything that interests me in a particular time. But as of now, it is cycling. Admittedly, I am only studying programming to have a stable income in the future. What I really intend to do in the future is to do business, investing, trading and the like. I chose this course for the reason that this is where I developed my interest as a result of being a student in computer programming course both in junior and senior high school for a total of four years.</string>
+    <string name="select_mode">Select Game Mode</string>
+    <string-array name="modes">
+        <item>Enumeration</item>
+        <item>Multiple Choice</item>
+    </string-array>
+    <string name="enum_instruction">Spell the Word</string>
+    <string name="multi_instrucion">Choose the correct spelling of the word</string>
+    <string name="greeting">Hello Bee!</string>
+    <string name="espina_ig_link">https://www.instagram.com/harxette_e/</string>
+    <string name="espina_fb_link">https://www.instagram.com/harxette_e/</string>
+    <string name="espina_twitter_link"></string>
+    <string name="pinca_ig_link">https://www.instagram.com/itsmerachhhu/</string>
+    <string name="pinca_fb_link">https://www.facebook.com/rachealanne.pinca</string>
+    <string name="pinca_twitter_link">https://twitter.com/pinkcaaa?fbclid=IwAR1uleAQJCbTmUn3lAV4EOKLvT-ZaqWm0YWyWCuolx6Muna1x1D8nikfOTE</string>
+    <string name="pile_fb_link">https://www.facebook.com/johnlloyd.pile/</string>
+    <string name="pile_ig_link">https://www.instagram.com/jlpile/</string>
+    <string name="pile_twitter_link">https://twitter.com/jlpilee?s=21&amp;t=F1gsuXtDhiwoTk1AjKXMMw&amp;fbclid=IwAR03lXXdaecT30Q9jUispfMMicaUOdKAWfgrp9YfVrFt1bzvJJjK0_TYMYM</string>
+</resources>

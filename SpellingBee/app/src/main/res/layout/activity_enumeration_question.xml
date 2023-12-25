@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnumerationQuestion"
+    android:background="@drawable/questions_bg">
+
+
+    <TextView
+        android:id="@+id/question_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="1/5"
+        android:gravity="right"
+        android:paddingRight="20dp"
+        android:fontFamily="@font/aileron_heavy"
+        android:textColor="@color/brown"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:elevation="10dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="@id/question_num">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp">
+
+
+            <ImageView
+                android:id="@+id/instructions"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/enumeration_instruction"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="80dp"
+                />
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/word_sound_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                app:layout_constraintTop_toBottomOf="@id/instructions"
+                android:src="@drawable/word_sound_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:onClick="replayWord"/>
+
+            <TextView
+                android:id="@+id/replay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click to play the word"
+                app:layout_constraintTop_toBottomOf="@id/word_sound_icon"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <EditText
+                android:id="@+id/answer"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/replay"
+                android:hint="Answer"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_background_white"
+                android:singleLine="true"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="15dp"
+                android:id="@+id/submit_button"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/button_background"
+                app:layout_constraintTop_toBottomOf="@id/answer"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:fontFamily="@font/aileron_heavy"
+                android:textSize="20sp"
+                android:onClick="submitAnswer"
+
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

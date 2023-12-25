@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameModeSelection"
+    android:background="@drawable/mode_selection_bg"
+    >
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:src="@drawable/brown_back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:onClick="backToLandingPage"
+        android:elevation="10dp"/>
+
+
+    <ImageView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/select_gamemode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back_button"
+        android:layout_marginTop="60dp"
+
+        />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:outlineAmbientShadowColor="@color/brown"
+        app:layout_constraintTop_toBottomOf="@+id/instructions"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/spinner_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="55dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_spelling"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:text="start"
+        android:textSize="20sp"
+        android:onClick="openQuestionOne"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aileron_heavy"
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

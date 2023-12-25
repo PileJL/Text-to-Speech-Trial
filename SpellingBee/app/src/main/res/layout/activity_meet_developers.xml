@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeetDevelopers"
+    android:background="@drawable/developers_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/brown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="5dp"
+        android:elevation="10dp"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:src="@drawable/back_button_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="backToHomePage"/>
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/eczar_semi_bold"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Developers"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="70dp"
+                android:paddingBottom="20dp"
+                >
+                <ImageView
+                    android:id="@+id/espina_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/hariette_image"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:onClick="openDevProfile"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/espina_name"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/eczar_semi_bold"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    />
+
+                <ImageView
+                    android:id="@+id/pinca_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/pinca_image"
+                    android:layout_gravity="center"
+                    android:onClick="openDevProfile"
+                    android:layout_marginTop="25dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pinca_name"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/eczar_semi_bold"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    />
+                <ImageView
+                    android:id="@+id/pile_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/pile_image"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:onClick="openDevProfile"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pile_name"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/eczar_semi_bold"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@drawable/contact_icon"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us:"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/aileron_heavy"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:id="@+id/email_field"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/dm_sans_regular"
+                    android:textColor="@color/brown"
+                    android:hint="Email (Optional)"
+                    android:textSize="15dp"
+                    android:inputType="textEmailAddress"/>
+
+                <EditText
+                    android:id="@+id/phone_number_field"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/dm_sans_regular"
+                    android:textColor="@color/brown"
+                    android:hint="Phone Number (Optional)"
+                    android:textSize="15dp"
+                    android:inputType="phone"/>
+
+                <EditText
+                    android:id="@+id/message_field"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/dm_sans_regular"
+                    android:textColor="@color/brown"
+                    android:hint="Message"
+                    android:textSize="15dp"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/send_button"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:text="Send"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_background"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/aileron_heavy"
+                    android:onClick="sendMessage"/>
+
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
